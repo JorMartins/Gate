@@ -1,0 +1,11 @@
+1-: Criar app.jar
+C:\BM\GATE\backend> mvn install
+
+
+Gerar imagem:
+docker build -t gate:gate-backend .
+
+
+Subir o Container:
+SUBI via DockerDesktop
+docker container run -d -p 8123:8123 --name container-bm-gate bm-gate:spring-docker-v1

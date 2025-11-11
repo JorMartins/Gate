@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administração</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>ADMIN - Usuário logado: {{ username }}</h1>
+            <button class="logout-btn" onclick="window.location.href='/logout'">Sair</button>
+        </header>
+        
+        <main class="main-content">
+            <div class="welcome-section">
+                <h2>Bem-vindo à Área Administrativa</h2>
+                <p>Esta é a área dedicada à administração do sistema.</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/admin.js') }}"></script>
+</body>
+</html>

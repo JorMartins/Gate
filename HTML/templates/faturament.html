@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faturamento</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/faturament.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Menu Lateral -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Menu Faturamento</h2>
+            </div>
+            <ul class="menu">
+                <li class="menu-item">
+                    <button class="menu-button active" data-section="mensagens">Mensagens</button>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Conteúdo Principal -->
+        <div class="main-content-area">
+            <header class="page-header logistica-header">
+                <h1>FATURAMENTO - Usuário logado: {{ username }}</h1>
+                <button class="logout-btn" onclick="window.location.href='/logout'">Sair</button>
+            </header>
+            
+            <main class="content">
+                <!-- Seção Mensagens -->
+                <div id="mensagens-section" class="content-section">
+                    <!-- REMOVIDO: <h2 class="section-title">Mensagens dos Chats</h2> -->
+                    
+                    <div class="messages-container">
+                        <div class="chats-list">
+                            <h3>Chats Ativos</h3>
+                            <div id="chatsList" class="chats-scrollable">
+                                <!-- Lista de chats será carregada aqui -->
+                            </div>
+                        </div>
+                        
+                        <div class="messages-area">
+                            <div class="messages-header">
+                                <h3 id="selectedChatTitle">Selecione um chat para ver as mensagens</h3>
+                            </div>
+                            <div id="messagesList" class="messages-scrollable">
+                                <!-- Mensagens serão carregadas aqui -->
+                            </div>
+                            <div class="message-input-container hidden" id="messageInputContainer">
+                                <div class="message-input">
+                                    <input type="text" id="newMessage" placeholder="Digite sua mensagem..." maxlength="500">
+                                    <select id="locationSelect" class="location-combobox">
+                                        <option value="">LOCALIZAÇÕES</option>
+                                        <option value="ALMOXARIFADO|-21.155082020442496,-47.92719549309352">ALMOXARIFADO</option>
+                                        <option value="COI|-21.154555932978607,-47.928228000320715">COI</option>
+                                        <option value="EMBARQUE DE COURO|-21.155541931978973,-47.92770844675878">EMBARQUE DE COURO</option>
+                                        <option value="EMBARQUE COM OSSO|-21.1556796,-47.9284063">EMBARQUE COM OSSO</option>
+                                        <option value="EMBARQUE PORCIONADOS|-21.1536985043075,-47.92747239540166">EMBARQUE PORCIONADOS</option>
+                                        <option value="EMBARQUE CONGELADOS|-21.154755642812773,-47.928336525504356">EMBARQUE CONGELADOS</option>
+                                        <option value="EMBARQUE RESFRIADOS|-21.15423350179089,-47.92747342912668">EMBARQUE RESFRIADOS</option>
+                                        <option value="GRAXARIA|-21.1545324,-47.9274997">GRAXARIA</option>
+                                        <option value="SEBO|-21.15460722919673,-47.92676581552385">SEBO</option>
+                                        <option value="BALANÇA/FATURAMENTO|-21.156039942252562,-47.929063170628396">BALANÇA/FATURAMENTO</option>
+                                        <option value="QUALIDADE|-21.154441493270863,-47.928826302997194">QUALIDADE</option>
+                                    </select>
+                                    <button id="sendMessage" class="btn-primary">Enviar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/faturament.js') }}"></script>
+</body>
+</html>

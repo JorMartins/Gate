@@ -1,0 +1,63 @@
+/* ===== ESTILOS ESPECÍFICOS DA PORTARIA ===== */
+
+/* PORTARIA - à DIREITA com tom de beje médio */
+.message-portaria {
+    background-color: var(--cor-beje-65);
+    margin-left: auto;
+    border: 1px solid var(--cor-beje-100);
+    max-width: 80%;
+    margin-bottom: 5px;
+    border-radius: 10px; /* Cantos arredondados */
+    padding: 2px 8px; 
+}
+
+/* Outros operadores - à ESQUERDA com tom de beje mais claro */
+.message-outro {
+    background-color: var(--cor-beje-25);
+    margin-right: auto;
+    border: 1px solid var(--cor-beje-100);
+    max-width: 80%;
+    margin-bottom: 5px;
+    border-radius: 10px; /* Cantos arredondados */
+    padding: 2px 8px; 
+}
+
+.message-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 11px;
+}
+
+.message-header {
+    font-weight: bold;
+    color: var(--cor-vinho-75);
+}
+
+.message-time {
+    color: var(--cor-vinho-50);
+    font-size: 10px;
+}
+
+.message-text {
+    word-wrap: break-word;
+    font-size: 13px;
+    line-height: 1.3;
+}
+
+.no-messages {
+    text-align: center;
+    color: var(--cor-vinho-75);
+    padding: 30px;
+    font-style: italic;
+    font-size: 13px;
+}
+
+.no-chat-selected {
+    text-align: center;
+    color: var(--cor-vinho-75);
+    padding: 30px;
+    font-style: italic;
+    font-size: 13px;
+}
