@@ -12,11 +12,14 @@ As mensagens são sincronizadas com o backend desenvolvido em **Spring Boot**, e
 
 Abaixo alguns exemplos visuais disponíveis na pasta `IMAGE/` do repositório:
 
-| Tela Web | Tela Tablet | Tela Celular |
+| Tela Web | Tela Chat WEB | Tela Celular |
 |-----------|---------------|------------------|
-| <img src="./Image/msg_portaria.png" width="250"/> | <img src="./Image/Android_Tablet.png" width="250"/> | <img src="./Image/Android_Celular.png" width="250"/> |
+| <img src="./Image/msg_portaria.png" width="350"/> | <img src="./Image/Chat.png" width="350"/> | <img src="./Image/Android_Celular.png" width="150"/> |
 
 
+| Tela Cadastro | Tela Faturamento | Tela Logistica |
+|-----------|---------------|------------------|
+| <img src="./Image/Android_DispNãoCadastrado.png" width="300"/> | <img src="./Image/msg_faturamento.png" width="300"/> | <img src="./Image/msg_logistica.png" width="300"/> |
 
 
 ## 🚀 Tecnologias Utilizadas
