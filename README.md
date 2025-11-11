@@ -12,9 +12,9 @@ As mensagens são sincronizadas com o backend desenvolvido em **Spring Boot**, e
 
 Abaixo alguns exemplos visuais disponíveis na pasta `IMAGE/` do repositório:
 
-| Tela Celular | Tela Tablet | Tela Celular |
+| Tela Celular | Tela Tablet | Tela Dispositivo Não Cadastro |
 |-----------|---------------|------------------|
-| <img src="./Image/Android_Celular.png" width="300"/> | <img src="./Image/Android_Tablet.png" width="300"/> | <img src="./Image/Android_Celular.png" width="150"/> |
+| <img src="./Image/Android_Celular.png" width="150"/> | <img src="./Image/Android_Tablet.png" width="300"/> | <img src="./Image/Android_DispNãoCadastrado.png" width="300"/> |
 
 
 | Tela Portaria | Tela Faturamento | Tela Logistica |
